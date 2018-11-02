@@ -1,0 +1,6 @@
+﻿  Map.cpp
+c:\users\evan.edwards\cdev\sfml game development\sfml game development\shared code\mapsystem\map.cpp(54): warning C4018: '>=': signed/unsigned mismatch
+c:\users\evan.edwards\cdev\sfml game development\sfml game development\shared code\mapsystem\map.cpp(57): warning C4018: '>=': signed/unsigned mismatch
+c:\users\evan.edwards\cdev\sfml game development\sfml game development\shared code\mapsystem\map.cpp(58): warning C4018: '>=': signed/unsigned mismatch
+c:\users\evan.edwards\cdev\sfml game development\sfml game development\shared code\mapsystem\map.cpp(87): warning C4018: '>=': signed/unsigned mismatch
+  SFML Game Development.vcxproj -> C:\Users\Evan.Edwards\cdev\SFML Game Development\Debug\SFML Game Development.exe

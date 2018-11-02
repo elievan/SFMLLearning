@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{FC069938-0A97-4042-A330-BB78D356AC8F}</ProjectGuid>
+    <RootNamespace>SFMLGameDevelopment</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Evan.Edwards\cdev\SFML Game Development\Dependencies\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\Evan.Edwards\cdev\SFML Game Development\Dependencies\SFML\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Shlwapi.lib;winmm.lib;opengl32.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;sfml-system-s-d.lib;sfml-audio-s-d.lib;freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Evan.Edwards\cdev\SFML Game Development\Dependencies\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\Evan.Edwards\cdev\SFML Game Development\Dependencies\SFML\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;sfml-audio-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;sfml-system-s-d.lib;freetype.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\cdev\SFML Game Development\Dependencies\SFML\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\cdev\SFML Game Development\Dependencies\SFML\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;sfml-system-s-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Chapter 2\Game.cpp" />
+    <ClCompile Include="Chapter 2\Main.cpp" />
+    <ClCompile Include="Chapter 2\States\State_Game.cpp" />
+    <ClCompile Include="Chapter 2\States\State_Intro.cpp" />
+    <ClCompile Include="Chapter 2\States\State_MainMenu.cpp" />
+    <ClCompile Include="Shared Code\ECS\Core\Entity_Manager.cpp" />
+    <ClCompile Include="Shared Code\ECS\Core\System_Manager.cpp" />
+    <ClCompile Include="Shared Code\ECS\Core\S_Base.cpp" />
+    <ClCompile Include="Shared Code\ECS\Systems\S_Collision.cpp" />
+    <ClCompile Include="Shared Code\ECS\Systems\S_Control.cpp" />
+    <ClCompile Include="Shared Code\ECS\Systems\S_Movement.cpp" />
+    <ClCompile Include="Shared Code\ECS\Systems\S_Renderer.cpp" />
+    <ClCompile Include="Shared Code\ECS\Systems\S_SheetAnimation.cpp" />
+    <ClCompile Include="Shared Code\ECS\Systems\S_Sound.cpp" />
+    <ClCompile Include="Shared Code\ECS\Systems\S_State.cpp" />
+    <ClCompile Include="Shared Code\EventSystem\EventManager.cpp" />
+    <ClCompile Include="Shared Code\GUI\Elements\GUI_CheckBox.cpp" />
+    <ClCompile Include="Shared Code\GUI\Elements\GUI_DropDownMenu.cpp" />
+    <ClCompile Include="Shared Code\GUI\Elements\GUI_Label.cpp" />
+    <ClCompile Include="Shared Code\GUI\Elements\GUI_Scrollbar.cpp" />
+    <ClCompile Include="Shared Code\GUI\Elements\GUI_Sprite.cpp" />
+    <ClCompile Include="Shared Code\GUI\Elements\GUI_TextField.cpp" />
+    <ClCompile Include="Shared Code\GUI\GUI_Element.cpp" />
+    <ClCompile Include="Shared Code\GUI\GUI_Interface.cpp" />
+    <ClCompile Include="Shared Code\GUI\GUI_Manager.cpp" />
+    <ClCompile Include="Shared Code\GUI\Specialized\FileManager.cpp" />
+    <ClCompile Include="Shared Code\GUI\Specialized\VerticalDropDown.cpp" />
+    <ClCompile Include="Shared Code\MapSystem\Map.cpp" />
+    <ClCompile Include="Shared Code\MapSystem\TileMap.cpp" />
+    <ClCompile Include="Shared Code\MapSystem\TileSet.cpp" />
+    <ClCompile Include="Shared Code\ParticleSystem\Emitter.cpp" />
+    <ClCompile Include="Shared Code\ParticleSystem\ParticleSystem.cpp" />
+    <ClCompile Include="Shared Code\SoundSystem\SoundManager.cpp" />
+    <ClCompile Include="Shared Code\SpriteSystem\Anim_Base.cpp" />
+    <ClCompile Include="Shared Code\SpriteSystem\Anim_Directional.cpp" />
+    <ClCompile Include="Shared Code\SpriteSystem\SpriteSheet.cpp" />
+    <ClCompile Include="Shared Code\StateSystem\StateManager.cpp" />
+    <ClCompile Include="Shared Code\StateSystem\States\State_Loading.cpp" />
+    <ClCompile Include="Shared Code\ThreadWorkers\FileLoader.cpp" />
+    <ClCompile Include="Shared Code\WindowSystem\Renderer.cpp" />
+    <ClCompile Include="Shared Code\WindowSystem\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Chapter 2\Game.h" />
+    <ClInclude Include="Chapter 2\States\State_Game.h" />
+    <ClInclude Include="Chapter 2\States\State_Intro.h" />
+    <ClInclude Include="Chapter 2\States\State_MainMenu.h" />
+    <ClInclude Include="Shared Code\ECS\Components\C_Collidable.h" />
+    <ClInclude Include="Shared Code\ECS\Components\C_Controller.h" />
+    <ClInclude Include="Shared Code\ECS\Components\C_Drawable.h" />
+    <ClInclude Include="Shared Code\ECS\Components\C_Movable.h" />
+    <ClInclude Include="Shared Code\ECS\Components\C_Position.h" />
+    <ClInclude Include="Shared Code\ECS\Components\C_SoundEmitter.h" />
+    <ClInclude Include="Shared Code\ECS\Components\C_SoundListener.h" />
+    <ClInclude Include="Shared Code\ECS\Components\C_SpriteSheet.h" />
+    <ClInclude Include="Shared Code\ECS\Components\C_State.h" />
+    <ClInclude Include="Shared Code\ECS\Core\C_Base.h" />
+    <ClInclude Include="Shared Code\ECS\Core\Entity_Manager.h" />
+    <ClInclude Include="Shared Code\ECS\Core\System_Manager.h" />
+    <ClInclude Include="Shared Code\ECS\Core\S_Base.h" />
+    <ClInclude Include="Shared Code\ECS\ECS_Types.h" />
+    <ClInclude Include="Shared Code\ECS\EntityEvents.h" />
+    <ClInclude Include="Shared Code\ECS\EntityMessages.h" />
+    <ClInclude Include="Shared Code\ECS\Systems\S_Collision.h" />
+    <ClInclude Include="Shared Code\ECS\Systems\S_Control.h" />
+    <ClInclude Include="Shared Code\ECS\Systems\S_Movement.h" />
+    <ClInclude Include="Shared Code\ECS\Systems\S_Renderer.h" />
+    <ClInclude Include="Shared Code\ECS\Systems\S_SheetAnimation.h" />
+    <ClInclude Include="Shared Code\ECS\Systems\S_Sound.h" />
+    <ClInclude Include="Shared Code\ECS\Systems\S_State.h" />
+    <ClInclude Include="Shared Code\EventSystem\Binding.h" />
+    <ClInclude Include="Shared Code\EventSystem\EventDetails.h" />
+    <ClInclude Include="Shared Code\EventSystem\EventInfo.h" />
+    <ClInclude Include="Shared Code\EventSystem\EventManager.h" />
+    <ClInclude Include="Shared Code\EventSystem\EventTypes.h" />
+    <ClInclude Include="Shared Code\GUI\Elements\GUI_CheckBox.h" />
+    <ClInclude Include="Shared Code\GUI\Elements\GUI_DropDownMenu.h" />
+    <ClInclude Include="Shared Code\GUI\Elements\GUI_Label.h" />
+    <ClInclude Include="Shared Code\GUI\Elements\GUI_Scrollbar.h" />
+    <ClInclude Include="Shared Code\GUI\Elements\GUI_Sprite.h" />
+    <ClInclude Include="Shared Code\GUI\Elements\GUI_TextField.h" />
+    <ClInclude Include="Shared Code\GUI\GUI_Element.h" />
+    <ClInclude Include="Shared Code\GUI\GUI_Event.h" />
+    <ClInclude Include="Shared Code\GUI\GUI_Interface.h" />
+    <ClInclude Include="Shared Code\GUI\GUI_Manager.h" />
+    <ClInclude Include="Shared Code\GUI\GUI_Style.h" />
+    <ClInclude Include="Shared Code\GUI\Specialized\FileManager.h" />
+    <ClInclude Include="Shared Code\GUI\Specialized\VerticalDropDown.h" />
+    <ClInclude Include="Shared Code\MapSystem\Map.h" />
+    <ClInclude Include="Shared Code\MapSystem\MapDefinitions.h" />
+    <ClInclude Include="Shared Code\MapSystem\MapHelpers.h" />
+    <ClInclude Include="Shared Code\MapSystem\MapLoadee.h" />
+    <ClInclude Include="Shared Code\MapSystem\TileInfo.h" />
+    <ClInclude Include="Shared Code\MapSystem\TileMap.h" />
+    <ClInclude Include="Shared Code\MapSystem\TileSet.h" />
+    <ClInclude Include="Shared Code\Observer\Communicator.h" />
+    <ClInclude Include="Shared Code\Observer\Message.h" />
+    <ClInclude Include="Shared Code\Observer\MessageHandler.h" />
+    <ClInclude Include="Shared Code\Observer\Observer.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\BaseGenerator.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\BaseUpdater.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Emitter.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\ForceApplicator.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\AreaPosition.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\ColorRange.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\LinePosition.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\PointPosition.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\Properties.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\RandomColor.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\RandomLifespan.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\RandomSize.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\RandomVelocity.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\RotationRange.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\SizeRange.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Generators\Texture.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\ParticleContainer.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\ParticleSystem.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Updaters\Collisions.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Updaters\Drawables.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Updaters\Forces.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Updaters\Interpolator.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Updaters\Lifespan.h" />
+    <ClInclude Include="Shared Code\ParticleSystem\Updaters\Spatial.h" />
+    <ClInclude Include="Shared Code\Resources\AudioManager.h" />
+    <ClInclude Include="Shared Code\Resources\FontManager.h" />
+    <ClInclude Include="Shared Code\Resources\ResourceManager.h" />
+    <ClInclude Include="Shared Code\Resources\TextureManager.h" />
+    <ClInclude Include="Shared Code\SharedContext.h" />
+    <ClInclude Include="Shared Code\SoundSystem\SoundManager.h" />
+    <ClInclude Include="Shared Code\SoundSystem\SoundProps.h" />
+    <ClInclude Include="Shared Code\SpriteSystem\Anim_Base.h" />
+    <ClInclude Include="Shared Code\SpriteSystem\Anim_Directional.h" />
+    <ClInclude Include="Shared Code\SpriteSystem\SpriteSheet.h" />
+    <ClInclude Include="Shared Code\StateSystem\BaseState.h" />
+    <ClInclude Include="Shared Code\StateSystem\StateDependent.h" />
+    <ClInclude Include="Shared Code\StateSystem\StateManager.h" />
+    <ClInclude Include="Shared Code\StateSystem\States\State_Loading.h" />
+    <ClInclude Include="Shared Code\StateSystem\StateTypes.h" />
+    <ClInclude Include="Shared Code\ThreadWorkers\FileLoader.h" />
+    <ClInclude Include="Shared Code\ThreadWorkers\Worker.h" />
+    <ClInclude Include="Shared Code\Types\Bitmask.h" />
+    <ClInclude Include="Shared Code\Types\Directions.h" />
+    <ClInclude Include="Shared Code\Types\Event_Queue.h" />
+    <ClInclude Include="Shared Code\Utilities\Helpers.h" />
+    <ClInclude Include="Shared Code\Utilities\RandomGenerator.h" />
+    <ClInclude Include="Shared Code\Utilities\Utilities.h" />
+    <ClInclude Include="Shared Code\WindowSystem\Renderer.h" />
+    <ClInclude Include="Shared Code\WindowSystem\Window.h" />
+    <ClInclude Include="utils\ResourceManager.h" />
+    <ClInclude Include="utils\StringHelpers.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Build\media\Fonts\Vegur-Regular.otf" />
+    <Font Include="res\Fonts\Sansation.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Build\media\Textures\ADOM-OGA-UI.png" />
+    <Image Include="Build\media\Textures\AutumnLeaf.png" />
+    <Image Include="Build\media\Textures\Brush-Icon.png" />
+    <Image Include="Build\media\Textures\Close-Icon.png" />
+    <Image Include="Build\media\Textures\Eraser-Icon.png" />
+    <Image Include="Build\media\Textures\File-Icon.png" />
+    <Image Include="Build\media\Textures\flame.png" />
+    <Image Include="Build\media\Textures\Folder-Icon.png" />
+    <Image Include="Build\media\Textures\FolderBack-Icon.png" />
+    <Image Include="Build\media\Textures\intro.png" />
+    <Image Include="Build\media\Textures\PaintCan-Icon.png" />
+    <Image Include="Build\media\Textures\Pan-Icon.png" />
+    <Image Include="Build\media\Textures\PlayerSheet.png" />
+    <Image Include="Build\media\Textures\Save-Icon.png" />
+    <Image Include="Build\media\Textures\Select-Icon.png" />
+    <Image Include="Build\media\Textures\SkeletonSheet.png" />
+    <Image Include="Build\media\Textures\smoke.png" />
+    <Image Include="Build\media\Textures\testsheet.png" />
+    <Image Include="Build\media\Textures\tilesheet.png" />
+    <Image Include="res\Textures\Desert.png" />
+    <Image Include="res\Textures\Eagle.png" />
+    <Image Include="res\Textures\Raptor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Build\audio.cfg" />
+    <None Include="Build\fonts.cfg" />
+    <None Include="Build\keys.cfg" />
+    <None Include="Build\media\Audio\Electrix_NES.ogg" />
+    <None Include="Build\media\Audio\footstep.ogg" />
+    <None Include="Build\media\Audio\TownTheme.ogg" />
+    <None Include="Build\media\Entities\Player.entity" />
+    <None Include="Build\media\Entities\Skeleton.entity" />
+    <None Include="Build\media\GUI_Interfaces\BasicDropdown.interface" />
+    <None Include="Build\media\GUI_Interfaces\FileManager.interface" />
+    <None Include="Build\media\GUI_Interfaces\MainMenu.interface" />
+    <None Include="Build\media\GUI_Interfaces\MainMenuToolkit.interface" />
+    <None Include="Build\media\GUI_Interfaces\MapEditorNewMap.interface" />
+    <None Include="Build\media\GUI_Interfaces\MapEditorSelectionOptions.interface" />
+    <None Include="Build\media\GUI_Interfaces\MapEditorTileSelect.interface" />
+    <None Include="Build\media\GUI_Interfaces\MapEditorTools.interface" />
+    <None Include="Build\media\GUI_Interfaces\MapEditorTop.interface" />
+    <None Include="Build\media\GUI_Styles\BasicDropdown.style" />
+    <None Include="Build\media\GUI_Styles\BasicDropdownEntry.style" />
+    <None Include="Build\media\GUI_Styles\BasicDropdownMenu.style" />
+    <None Include="Build\media\GUI_Styles\BasicSlider.style" />
+    <None Include="Build\media\GUI_Styles\BasicTextfield.style" />
+    <None Include="Build\media\GUI_Styles\CenteredLabel.style" />
+    <None Include="Build\media\GUI_Styles\CloseButton.style" />
+    <None Include="Build\media\GUI_Styles\FileEntry.style" />
+    <None Include="Build\media\GUI_Styles\FileManager.style" />
+    <None Include="Build\media\GUI_Styles\FileTextfield.style" />
+    <None Include="Build\media\GUI_Styles\FolderEntry.style" />
+    <None Include="Build\media\GUI_Styles\MainMenu.style" />
+    <None Include="Build\media\GUI_Styles\MainMenuLabel.style" />
+    <None Include="Build\media\GUI_Styles\MainMenuTitle.style" />
+    <None Include="Build\media\GUI_Styles\MainMenuToolkit.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorBrushTool.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorEraserTool.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorNewMap.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorPaintTool.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorPanTool.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorSelectionOptions.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorSelectionOptionsButton.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorSelectTool.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorSingleCharButton.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorTileSelect.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorTileSprite.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorTools.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorTop.style" />
+    <None Include="Build\media\GUI_Styles\MapEditorTopButton.style" />
+    <None Include="Build\media\GUI_Styles\ParentDirEntry.style" />
+    <None Include="Build\media\GUI_Styles\SaveButton.style" />
+    <None Include="Build\media\GUI_Styles\SimpleLabel.style" />
+    <None Include="Build\media\Maps\map1.map" />
+    <None Include="Build\media\Particles\AutumnLeaf.particle" />
+    <None Include="Build\media\Particles\Blood.particle" />
+    <None Include="Build\media\Particles\Flame.particle" />
+    <None Include="Build\media\Particles\MenuFlame.particle" />
+    <None Include="Build\media\Particles\MenuSmoke.particle" />
+    <None Include="Build\media\Particles\Smoke.particle" />
+    <None Include="Build\media\Particles\WaterSparkle.particle" />
+    <None Include="Build\media\Shaders\default.frag" />
+    <None Include="Build\media\Shaders\default.vert" />
+    <None Include="Build\media\Sounds\footstep.sound" />
+    <None Include="Build\media\Spritesheets\Player.sheet" />
+    <None Include="Build\media\Spritesheets\Skeleton.sheet" />
+    <None Include="Build\media\Tilesheets\Sheet1.tilesheet" />
+    <None Include="Build\textures.cfg" />
+    <None Include="utils\ResourceManager.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
